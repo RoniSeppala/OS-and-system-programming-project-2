@@ -21,9 +21,11 @@ int main(int argc, char *argv[]) {
             last = ch;
         }
         fclose(file);
-        if (last != '\n' && last != -1) {
+        /*
+        if (last != '\n' && last != -1) {  // if the last character is not a newline, print one
             putchar('\n');
         }
+        */
     }
 
     return 0;

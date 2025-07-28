@@ -9,6 +9,15 @@ After this i opened my c development environment of choice, which was WSL, creat
 ## Utility creation
 After the initial setup, I started creating the utilities one by one, starging from my-cat.c and going on into my-grep.c and lastly my-zip.c and my-unzip.c
 
+### Additional notes
+#### my-cat
+The instructions tell to exactly print the output of the file. This is not exactly as the original cat utility works, as it prints an extra newline if one is missing from the end of the document to smooth its usage in terminal. my-cat was edited to comply with the instructions by comminting out the following lines, which would make the my-cat function as cat in this regard
+```c
+if (last != '\n' && last != -1) {  // if the last character is not a newline, print one
+    putchar('\n');
+}
+```
+
 
 # Utility demonstrations
 ## my-cat

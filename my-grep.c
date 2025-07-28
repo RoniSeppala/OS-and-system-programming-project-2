@@ -40,7 +40,7 @@ int main(int argc, char *argv[]) {
         for (int i = 2; i < argc; i++) {
             FILE *file = fopen(argv[i], "r");
             if (file == NULL) { // Check if file opened successfully
-                printf("my-grep: cannot open file");
+                printf("my-grep: cannot open file\n");
                 return 1;
             }
             my_grep(argv[1], file);
