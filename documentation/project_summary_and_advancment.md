@@ -12,8 +12,45 @@ After the initial setup, I started creating the utilities one by one, starging f
 
 # Utility demonstrations
 ## my-cat
-demo
+test file catTestFile.txt
+```
+arstarst
+ars
+
+arsta
+<r<kgr
+fpbhjk
+```
+
+shell:
+```shell
+./my-cat catTestFile.txt
+arstarst
+ars
+
+arsta
+<r<kgr
+fpbhjk
+```
 ## my-grep
-demo
+shell:
+```shell
+./my-grep rst catTestFile.txt
+arstarst
+arsta
+```
 ## my-zip and my-unzip
-demo
+test file is zipTestFile.txt which can be found at the root of the project. with the following commands it was turned into test.zip and unzipped.txt both of which can also be found at the root of the project. comparison outputs are also included
+
+```shell
+./my-zip zipTestFile.txt > test.zip
+./my-unzip test.zip > unzipped.txt
+diff zipTestFile.txt test.zip
+Binary files zipTestFile.txt and test.zip differ
+
+diff test.zip unzipped.txt
+Binary files test.zip and unzipped.txt differ
+
+diff -s zipTestFile.txt unzipped.txt
+Files zipTestFile.txt and unzipped.txt are identical
+```
